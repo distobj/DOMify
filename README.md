@@ -9,5 +9,8 @@ as the only child of the body element.
 
 The two "demos" are available online here; [current][1], [watch][2]
 
+More information about the project is available on the [Wiki][3].
+
  [1]: http://www.markbaker.ca/2011/DOMify/demo/current-loc.html
  [2]: http://www.markbaker.ca/2011/DOMify/demo/watch-loc.html
+ [3]: https://github.com/distobj/DOMify/wiki
