@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="../src/domify.js"></script>
+<script type="text/javascript" src="../src/geo.domify.js"></script>
+<script type="text/javascript">
+$(Geo).bind('document-updated',function(e) {
+  var lat = $(Geo).find('#latitude').text();
+  var lon = $(Geo).find('#longitude').text();
+  $('#lat').text(lat); $('#long').text(lon);
+});
+</script>
+<title>Your current location</title>
+</head>
+<body>
+<p>Your current lat/long is <span id="lat">unknown</span>, <span id="long">unknown</span></p>
+</body>
+</html>

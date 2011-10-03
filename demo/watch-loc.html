@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="../src/domify.js"></script>
+<script type="text/javascript" src="../src/geo.domify.js"></script>
+<script type="text/javascript">
+$(Geo).bind('document-updated',function(e) {
+  var lat = $(Geo).find('#latitude').text();
+  var lon = $(Geo).find('#longitude').text();
+  $('body').append('<p>Your lat/long is '+lat+'/'+lon);
+});
+var wid = DOMIFY.watch(Geo);
+</script>
+<title>Watching your location</title>
+</head>
+<body>
+<input type="submit" value="Stop watching" onclick="DOMIFY.unwatch(Geo,wid);return false;" />
+</body>
+</html>
